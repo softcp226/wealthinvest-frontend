@@ -1,0 +1,36 @@
+@keyframes move_display {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+  section#overlay2 {
+    position: fixed; /* Sit on top of the page content */
+    display: none;
+    height: 440px;
+    width: 85vw;
+    max-width: 400px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #eee; /* Black background with opacity */
+    z-index: 999; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    margin: auto;
+
+    animation-name: move_display;
+    animation-duration: 1.9s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @media (min-width:500px) {
+      section#overlay2 {
+        height: 280px;
+        max-height: 280px;
+      }
+  }
