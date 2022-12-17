@@ -62,7 +62,7 @@ const shape_result = (userInfo) => {
   try {
     const response = await fetch(
       // "https://fintexaurum-backend.glitch.me/api/user/transactions/fetch",
-      "http://localhost:3000/api/user/transactions/fetch",
+      "https://wealthinvest-backend.glitch.me/api/user/transactions/fetch",
 
       {
         method: "POST",

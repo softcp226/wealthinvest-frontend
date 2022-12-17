@@ -37,7 +37,7 @@ const loginUser = async (email, password) => {
   try {
     document.querySelector("#login").innerHTML = "proccessing...";
     const response = await fetch(
-      "http://localhost:3000/api/user/login",
+      "https://wealthinvest-backend.glitch.me/api/user/login",
       {
         method: "POST",
         headers: { "content-type": "application/json" },
@@ -64,7 +64,7 @@ const complete_registration = async (userInfo) => {
   try {
     document.querySelector("#register").innerHTML = "proccessing...";
     const response = await fetch(
-      "http://localhost:3000/api/new_user/complete_registration",
+      "https://wealthinvest-backend.glitch.me/api/new_user/complete_registration",
       {
         method: "POST",
         //   headers: { "content-type": "application/json" },

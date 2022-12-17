@@ -49,7 +49,7 @@ const setText2 = (user) => {
   const token = getCookie("token");
   try {
     const response = await fetch(
-      "https://fintexaurum-backend.glitch.me/api/user/find",
+      "https://wealthinvest-backend.glitch.me/api/user/find",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

@@ -38,8 +38,8 @@ const loginUser = async (email, password) => {
   try {
     document.querySelector("#login").innerHTML = "proccessing...";
     const response = await fetch(
-      "http://localhost:3000/api/user/login",
-      // "https://wealthinvest-backend.glitch.me"
+      // "http://localhost:3000/api/user/login",
+      "https://wealthinvest-backend.glitch.me/api/user/login",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

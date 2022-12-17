@@ -20,7 +20,7 @@ const handle_withdrawal = async (form) => {
     document.querySelector("#submit").innerHTML = "proccessing...";
     const response = await fetch(
       // "https://fintexaurum-backend.glitch.me/api/user/withdraw",
-      "http://localhost:3000/api/user/withdraw",
+      "https://wealthinvest-backend.glitch.me/api/user/withdraw",
 
       {
         method: "POST",

@@ -87,7 +87,7 @@ const handle_submit_deposit = async (form) => {
   try {
     document.querySelector("#submit").innerHTML = "proccessing...";
     const response = await fetch(
-      "http://localhost:3000/api/user/create_deposit",
+      "https://wealthinvest-backend.glitch.me/api/user/create_deposit",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

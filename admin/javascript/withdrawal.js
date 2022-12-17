@@ -33,7 +33,7 @@ const handle_delete_withdrawal = async (btn, withdrawal_request) => {
   let user=getCookie("user")
   try {
     const response = await fetch(
-      "http://localhost:3000/api/admin/withdrawal/fetch/withdrawal/delete",
+      "https://wealthinvest-backend.glitch.me/api/admin/withdrawal/fetch/withdrawal/delete",
 
       // "https://fintexaurum-backend.glitch.me/api/admin/withdrawal/fetch/withdrawal/delete",
       {
@@ -68,7 +68,7 @@ const handle_approve_withdrawal = async (btn, withdrawal_request) => {
   let admin = getCookie("admin");
   try {
     const response = await fetch(
-    "http://localhost:3000/api/admin/withdrawal_request/approve",
+    "https://wealthinvest-backend.glitch.me/api/admin/withdrawal_request/approve",
       // "https://fintexaurum-backend.glitch.me/api/admin/withdrawal_request/approve",
       {
         method: "POST",
@@ -177,7 +177,7 @@ const setText = (userInfo) => {
   try {
     const response = await fetch(
       // "https://fintexaurum-backend.glitch.me/api/admin/withdrawal/fetch",
-      "http://localhost:3000/api/admin/withdrawal/fetch",
+      "https://wealthinvest-backend.glitch.me/api/admin/withdrawal/fetch",
 
       {
         method: "POST",

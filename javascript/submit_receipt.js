@@ -26,7 +26,7 @@ const submit_receipt = async (form) => {
   document.querySelector("#submit").innerHTML = "processing...";
   try {
     const response = await fetch(
-      "https://fintexaurum-backend.glitch.me/api/user/deposit/complete",
+      "https://wealthinvest-backend.glitch.me/api/user/deposit/complete",
       {
         method: "POST",
         // headers:{"content-type":"application/json"},

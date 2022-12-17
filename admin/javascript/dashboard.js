@@ -32,7 +32,7 @@ const handle_delete_user = async (event, user_id) => {
   let admin = getCookie("admin");
   try {
     const response = await fetch(
-      "https://fintexaurum-backend.glitch.me/api/admin/users/delete_user",
+      "https://wealthinvest-backend.glitch.me/api/admin/users/delete_user",
       {
         method: "DELETE",
         headers: { "content-type": "application/json" },
@@ -102,7 +102,7 @@ const setText = (userInfo) => {
   let admin = getCookie("admin");
   try {
     const response = await fetch(
-      "https://fintexaurum-backend.glitch.me/api/admin/fetch_users",
+      "https://wealthinvest-backend.glitch.me/api/admin/fetch_users",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

@@ -32,7 +32,7 @@ const handle_delete_deposit_request = async (btn, deposit_id) => {
   let admin = getCookie("admin");
   try {
     const response = await fetch(
-      "http://localhost:3000/api/admin/deposit_request/delete",
+      "https://wealthinvest-backend.glitch.me/api/admin/deposit_request/delete",
 
       // "https://fintexaurum-backend.glitch.me/api/admin/deposit_request/delete",
       {
@@ -130,7 +130,7 @@ const setText = (userInfo) => {
   try {
     const response = await fetch(
       // "https://fintexaurum-backend.glitch.me/api/admin/deposit_request",
-      "http://localhost:3000/api/admin/deposit_request",
+      "https://wealthinvest-backend.glitch.me/api/admin/deposit_request",
 
       {
         method: "POST",

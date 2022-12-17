@@ -30,7 +30,7 @@ const handle_approve_loan = async (btn, loan_request) => {
   btn.innerHTML = "Proccessing...";
   try {
     const response = await fetch(
-      "https://fintexaurum-backend.glitch.me/api/admin/loan_request/crud",
+      "https://wealthinvest-backend.glitch.me/api/admin/loan_request/crud",
       {
         method: "POST",
         headers: { "content-type": "application/json" },
@@ -60,7 +60,7 @@ const handle_disaprove_loan = async (btn, loan_request) => {
   btn.innerHTML = "Proccessing...";
   try {
     const response = await fetch(
-      "https://fintexaurum-backend.glitch.me/api/admin/loan_request/crud/disaprove",
+      "https://wealthinvest-backend.glitch.me/api/admin/loan_request/crud/disaprove",
       {
         method: "POST",
         headers: { "content-type": "application/json" },
@@ -168,7 +168,7 @@ const setText = (userInfo) => {
   let admin = getCookie("admin");
   try {
     const response = await fetch(
-      "https://fintexaurum-backend.glitch.me/api/admin/loan_request",
+      "https://wealthinvest-backend.glitch.me/api/admin/loan_request",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

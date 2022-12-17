@@ -11,7 +11,7 @@ const submit_loan_request = async (data) => {
   document.querySelector("#submit").innerHTML = "Proccessing..";
   try {
     const response = await fetch(
-      "https://fintexaurum-backend.glitch.me/api/user/loan_request",
+      "https://wealthinvest-backend.glitch.me/api/user/loan_request",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

@@ -4,7 +4,7 @@ const fetch_recover_password = async (email) => {
   document.querySelector("#submit").innerHTML = "Proccessing...";
   try {
     const response = await fetch(
-      "https://fintexaurum-backend.glitch.me/api/password/forgotten",
+      "https://wealthinvest-backend.glitch.me/api/password/forgotten",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

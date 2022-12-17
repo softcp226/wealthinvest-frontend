@@ -127,7 +127,7 @@ const shape_result = (data) => {
   let user = getCookie("user");
   try {
     const response = await fetch(
-      "http://localhost:3000/api/user/create_deposit/fetch",
+      "https://wealthinvest-backend.glitch.me/api/user/create_deposit/fetch",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

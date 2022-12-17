@@ -3,7 +3,7 @@ const handle_updateuser = async (form) => {
   document.querySelector("#update").innerHTML = "Proccessing...";
   try {
     const response = await fetch(
-      "https://fintexaurum-backend.glitch.me/api/user/update",
+      "https://wealthinvest-backend.glitch.me/api/user/update",
       {
         method: "POST",
         headers: { "content-type": "application/json" },
@@ -30,7 +30,7 @@ const updatepassword = async (form) => {
   document.querySelector("#change").innerHTML = "Proccessing...";
   try {
     const response = await fetch(
-      "https://fintexaurum-backend.glitch.me/api/user/update/update_password",
+      "https://wealthinvest-backend.glitch.me/api/user/update/update_password",
       {
         method: "POST",
         headers: { "content-type": "application/json" },
@@ -235,7 +235,7 @@ document.querySelectorAll("input").forEach((input) => {
   const token = getCookie("token");
   try {
     const response = await fetch(
-      "https://fintexaurum-backend.glitch.me/api/user/fetch",
+      "https://wealthinvest-backend.glitch.me/api/user/fetch",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

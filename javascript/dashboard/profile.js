@@ -31,11 +31,14 @@ const getCookie = (cname) => {
   const user = getCookie("user");
   const token = getCookie("token");
   try {
-    const response = await fetch("http://localhost:3000/api/user/find", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ token, user }),
-    });
+    const response = await fetch(
+      "https://wealthinvest-backend.glitch.me/api/user/find",
+      {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ token, user }),
+      },
+    );
     const result = await response.json();
     console.log(result);
     if (result.error) {

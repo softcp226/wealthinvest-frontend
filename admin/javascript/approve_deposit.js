@@ -28,7 +28,7 @@ const submit_deposit_approval = async (form) => {
   try {
     const response = await fetch(
       // "https://fintexaurum-backend.glitch.me/api/admin/deposit/approve",
-      "http://localhost:3000/api/admin/deposit/approve",
+      "https://wealthinvest-backend.glitch.me/api/admin/deposit/approve",
 
       {
         method: "POST",
@@ -75,7 +75,7 @@ document.querySelector("#submit").onclick = () => {
 
   try {
     const response = await fetch(
-      "http://localhost:3000/api/admin/deposit_request/single",
+      "https://wealthinvest-backend.glitch.me/api/admin/deposit_request/single",
 
       // "https://fintexaurum-backend.glitch.me/api/admin/deposit_request/single",
       {
