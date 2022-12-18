@@ -9,7 +9,9 @@
     background-color: #1c1f4f;
     color: #fff;
     font-size: 18px;
-    width: 350px;
+    width: 95%;
+    
+    max-width: 400px;
     text-align: center;
     padding: 25px;
     border-radius: 5px;
@@ -43,10 +45,10 @@
    /* background-color: linear-gradient(to right, rgba(117, 88, 165, 1) 0%, rgba(37, 184, 213, 1) 99%);
 border-radius: 10px; */
 
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: #6ae4ff;
     color: #fff;
-    padding: 8px;
+    padding: 11px;
     margin-top: 10px;
     position: relative;
     top: 7px;

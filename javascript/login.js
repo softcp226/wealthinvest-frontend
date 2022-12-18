@@ -73,8 +73,7 @@ const getReferral = () => {
 const registerUser = async (email, phone_number, country) => {
   try {
     document.querySelector("#next").innerHTML = "proccessing...";
-    const response = await fetch(
-      "http://localhost:3000/api/newuser/register",
+    const response = await fetch( "https://wealthinvest-backend.glitch.me/api/newuser/register",
       {
         method: "POST",
         headers: { "content-type": "application/json" },
@@ -96,6 +95,7 @@ const registerUser = async (email, phone_number, country) => {
     document.querySelector("#next").innerHTML = "success";
     return setCookie_01(result.message.user, result.token);
   } catch (err) {
+    console.log(err)
     document.querySelector(".errmessage2").innerHTML = err.message;
     document.querySelector("#next").innerHTML = "try again";
   }
